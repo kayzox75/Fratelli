@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fratelli — Ristorante Italiano à Paris 8ᵉ · Madeleine</title>
+<meta name="description" content="Fratelli, Ristorante Italiano à deux pas de la Madeleine, Paris 8ᵉ. Cuisine entièrement faite maison, pâtes fraîches, pizze et produits importés d'Italie. 23 rue Pasquier, 75008 Paris — 01 42 94 97 81.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a href="#top" class="logo">
+      <span class="logo-mark">F</span>
+      <span class="logo-stripe" aria-hidden="true"></span>
+      <span class="logo-text">Fratelli<span class="logo-sub">Ristorante Italiano</span></span>
+    </a>
+
+    <nav class="main-nav" id="main-nav">
+      <ul>
+        <li><a href="#histoire">La maison</a></li>
+        <li><a href="#menu">La carte</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="https://www.fratelli-ristorante.fr/online-ordering" target="_blank" rel="noopener">Click &amp; Collect</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <a href="tel:+33142949781" class="btn btn-ghost btn-small header-phone">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>01 42 94 97 81</span>
+      </a>
+      <a href="https://www.fratelli-ristorante.fr/reservations" target="_blank" rel="noopener" class="btn btn-primary btn-small">Réserver une table</a>
+    </div>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu de navigation" aria-expanded="false" aria-controls="main-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ===== HERO — VIDÉO QUI S'AGRANDIT AU SCROLL ===== -->
+  <section class="expand-hero" id="accueil" data-expand-hero>
+    <div class="expand-hero__sticky">
+      <!-- Fond décoratif qui s'estompe -->
+      <div class="expand-hero__bg" data-eh-bg aria-hidden="true"></div>
+
+      <!-- Vidéo centrée qui s'agrandit -->
+      <div class="expand-hero__media" data-eh-media>
+        <video class="expand-hero__video" autoplay muted loop playsinline preload="auto" disablepictureinpicture>
+          <source src="assets/v2_awv-7b7927b16d7ff893.mp4" type="video/mp4">
+        </video>
+        <div class="expand-hero__scrim" aria-hidden="true"></div>
+      </div>
+
+      <!-- Titre décoratif qui se sépare -->
+      <div class="expand-hero__titles" data-eh-titles aria-hidden="true">
+        <span class="expand-hero__word" data-eh-word-left>Fratelli</span>
+        <span class="expand-hero__word" data-eh-word-right>Ristorante&nbsp;Italiano</span>
+      </div>
+
+      <!-- Contenu révélé une fois la vidéo agrandie -->
+      <div class="expand-hero__caption" data-eh-caption>
+        <p class="eyebrow eyebrow--light">Ristorante Italiano · Paris 8ᵉ — Madeleine</p>
+        <h1>Un véritable voyage<br>au cœur de l'<em>Italie</em></h1>
+        <p class="expand-hero__lead">À deux pas de la Madeleine, une cuisine entièrement faite maison où chaque plat raconte une histoire de passion et de tradition.</p>
+        <div class="expand-hero__actions">
+          <a href="#menu" class="btn btn-primary">Découvrir la carte</a>
+          <a href="https://www.fratelli-ristorante.fr/reservations" target="_blank" rel="noopener" class="btn btn-outline-light">Réserver une table</a>
+        </div>
+      </div>
+
+      <!-- Indice de défilement -->
+      <div class="expand-hero__hint" data-eh-hint>
+        <span>Défilez pour agrandir</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STRIP / VALEURS ===== -->
+  <section class="values" aria-label="Notre maison en quelques mots">
+    <div class="container values-grid">
+      <div class="value-item reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10l-1 9a4 4 0 0 1-8 0L7 4Z"/></svg>
+        <h3>Cuisine 100% maison</h3>
+        <p>Des antipasti aux dolci, tout est préparé sur place, chaque jour, par notre équipe.</p>
+      </div>
+      <div class="value-item reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 7v6c0 5.25 3.5 8.5 8 9 4.5-.5 8-3.75 8-9V7l-8-5Z"/></svg>
+        <h3>Produits importés d'Italie</h3>
+        <p>Mozzarella di bufala et burrata importées trois fois par semaine, charcuteries fines.</p>
+      </div>
+      <div class="value-item reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18M7 14l4-4 3 3 5-6"/></svg>
+        <h3>Pâtes &amp; raviolis frais</h3>
+        <p>Pâtes fraîches, raviolis et gnocchi façonnés maison, dans la pure tradition italienne.</p>
+      </div>
+      <div class="value-item reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 1 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        <h3>À deux pas de la Madeleine</h3>
+        <p>Au cœur du 8ᵉ arrondissement — idéal pour un dîner, un repas entre amis ou un déjeuner d'affaires.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HISTOIRE ===== -->
+  <section class="histoire" id="histoire">
+    <div class="container histoire-grid">
+      <div class="histoire-media reveal">
+        <div class="photo-placeholder photo-placeholder--portrait"><img src="assets/img/histoire.jpg" alt="Pizze au prosciutto et roquette servies en salle chez Fratelli" loading="lazy"></div>
+        <div class="histoire-badge">
+          <span>Au cœur du</span>
+          <strong>Paris 8ᵉ</strong>
+        </div>
+      </div>
+      <div class="histoire-content reveal">
+        <p class="eyebrow">La maison</p>
+        <h2>Un voyage au cœur de l'Italie</h2>
+        <p>À deux pas de la Madeleine, poussez les portes de Fratelli et laissez-vous emporter pour un véritable voyage au cœur de l'Italie. Dans une ambiance chaleureuse et authentique, découvrez une cuisine entièrement faite maison, où chaque plat raconte une histoire de passion et de tradition.</p>
+        <p>Produits frais sélectionnés chaque jour, mozzarella et burrata importées d'Italie, pâtes et raviolis façonnés maison : tout est pensé pour vous offrir l'Italie comme à la maison — pour un dîner en amoureux, un repas convivial entre amis ou un déjeuner d'affaires.</p>
+        <a href="#menu" class="link-arrow">Voir notre carte
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MENU ===== -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <div class="section-heading reveal">
+        <p class="eyebrow">La carte</p>
+        <h2>Notre carte</h2>
+        <p class="section-lead">Une cuisine entièrement faite maison, avec des produits frais sélectionnés chaque jour. Liste des allergènes disponible sur demande.</p>
+      </div>
+
+      <div class="menu-tabs reveal" role="tablist" aria-label="Catégories de la carte">
+        <button class="menu-tab is-active" role="tab" aria-selected="true" aria-controls="panel-antipasti" id="tab-antipasti" data-target="panel-antipasti">Antipasti</button>
+        <button class="menu-tab" role="tab" aria-selected="false" aria-controls="panel-salades" id="tab-salades" data-target="panel-salades">Salades</button>
+        <button class="menu-tab" role="tab" aria-selected="false" aria-controls="panel-pasta" id="tab-pasta" data-target="panel-pasta">Pasta</button>
+        <button class="menu-tab" role="tab" aria-selected="false" aria-controls="panel-pizza" id="tab-pizza" data-target="panel-pizza">Pizza</button>
+        <button class="menu-tab" role="tab" aria-selected="false" aria-controls="panel-secondi" id="tab-secondi" data-target="panel-secondi">Secondi &amp; Risotti</button>
+        <button class="menu-tab" role="tab" aria-selected="false" aria-controls="panel-dolci" id="tab-dolci" data-target="panel-dolci">Dolci</button>
+      </div>
+
+      <div class="menu-panels reveal">
+
+        <!-- ANTIPASTI -->
+        <div class="menu-panel is-active" id="panel-antipasti" role="tabpanel" aria-labelledby="tab-antipasti">
+          <div class="menu-group">
+            <h3 class="menu-subhead">Antipasti</h3>
+            <div class="menu-group-items">
+              <div class="menu-item"><div class="menu-item-head"><h4>Affettato Misto</h4><span class="menu-price">19 €</span></div><p>Assortiment de charcuterie italienne.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Mozzarella in Carrozza</h4><span class="menu-price">13 €</span></div><p>Beignets de mozzarella frits, servis avec leur sauce tomate maison.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Bruschetta Tricolore</h4><span class="menu-price">14 €</span></div><p>Pesto, stracciatella, tomates, crème de truffe d'été.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Mozzarella di Bufala</h4><span class="menu-price">12 €</span></div><p>Mozzarella di bufala 125 g, importée d'Italie trois fois par semaine.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Antipasto Misto</h4><span class="menu-price">22 €</span></div><p>Charcuterie, légumes grillés et mozzarella di bufala.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>La Burrata Pugliese</h4><span class="menu-price">15 €</span></div><p>Burrata 125 g, fenouil caramélisé, tomates cerises, réduction balsamique.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Carpaccio di Manzo</h4><span class="menu-price">18 €</span></div><p>Fines lamelles de bœuf Angus, copeaux de parmesan, roquette, pignons.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Frittura Mista</h4><span class="menu-price">18 €</span></div><p>Friture de fruits de mer et de légumes.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SALADES -->
+        <div class="menu-panel" id="panel-salades" role="tabpanel" aria-labelledby="tab-salades" hidden>
+          <div class="menu-group">
+            <h3 class="menu-subhead">Insalate</h3>
+            <div class="menu-group-items">
+              <div class="menu-item"><div class="menu-item-head"><h4>Insalata Cesar</h4><span class="menu-price">18 €</span></div><p>Blanc de poulet pané, croûtons, copeaux de parmesan, sauce César maison.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Tartare Saumon &amp; Avocat</h4><span class="menu-price">19,50 €</span></div><p>Tartare de saumon frais et avocat.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Salade Campagnarde au Saumon</h4><span class="menu-price">18 €</span></div><p>Camembert pané, saumon fumé, tomates séchées, oignons rouges.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Salade Campagnarde au Jambon de Parme</h4><span class="menu-price">18 €</span></div><p>Camembert pané, jambon de Parme, tomates séchées, oignons rouges.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Insalata Fratelli</h4><span class="menu-price">18,50 €</span></div><p>Poulet, mâche, quinoa, avocat, grenade, noisettes, oignons frits, sauce miel-moutarde maison.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PASTA -->
+        <div class="menu-panel" id="panel-pasta" role="tabpanel" aria-labelledby="tab-pasta" hidden>
+          <div class="menu-group">
+            <h3 class="menu-subhead">Pasta Fresca</h3>
+            <div class="menu-group-items">
+              <div class="menu-item"><div class="menu-item-head"><h4>Pasta Vitello</h4><span class="menu-price">19 €</span></div><p>Pâtes fraîches, veau, tomates cerises, champignons, crème, sauce tomate maison.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Pasta alla Carbonara</h4><span class="menu-price">19 €</span></div><p>Pâtes fraîches, guanciale, jaunes d'œuf, Parmigiano Reggiano.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Lasagne alla Bolognese</h4><span class="menu-price">19 €</span></div><p>Lasagnes au ragoût traditionnel.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Malfatti di Ricotta e Spinaci</h4><span class="menu-price">19 €</span></div><p>Ricotta et épinards, gratinés à la crème.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Raviolone Fratelli al Tartufo</h4><span class="menu-price">22 €</span></div><p>Raviolis farcis burrata et ricotta, crème de truffe noire d'été.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Ravioli Ricotta &amp; Épinards</h4><span class="menu-price">19 €</span></div><p>Raviolis ricotta-épinards, crème de parmesan.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Pasta al Pesto Genovese</h4><span class="menu-price">20 €</span></div><p>Pesto, stracciatella di burrata, pignons.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Pasta al Salmone</h4><span class="menu-price">20 €</span></div><p>Saumon frais, crème citron-aneth.</p></div>
+            </div>
+          </div>
+          <div class="menu-group">
+            <h3 class="menu-subhead">Pasta Classica</h3>
+            <div class="menu-group-items">
+              <div class="menu-item"><div class="menu-item-head"><h4>Spaghettone du Soleil</h4><span class="menu-price">19 €</span></div><p>Sauce tomate maison, stracciatella, courgettes frites, basilic frais.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Linguine ai Gamberetti</h4><span class="menu-price">23 €</span></div><p>Crevettes, sauce tomate cerise, bisque de crustacés maison.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Spaghetti Polpettine</h4><span class="menu-price">20 €</span></div><p>Boulettes de bœuf à la sicilienne.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Spaghetti alla Primavera</h4><span class="menu-price">18 €</span></div><p>Spaghetti aux légumes.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Gnocchi con Polpettine al Tartufo</h4><span class="menu-price">22 €</span></div><p>Gnocchi, boulettes de bœuf, crème de truffe.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Linguine alle Vongole Veraci</h4><span class="menu-price">24 €</span></div><p>Palourdes, tomates cerises, ail, persil.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PIZZA -->
+        <div class="menu-panel" id="panel-pizza" role="tabpanel" aria-labelledby="tab-pizza" hidden>
+          <div class="menu-group">
+            <h3 class="menu-subhead">Pizza</h3>
+            <div class="menu-group-items">
+              <div class="menu-item"><div class="menu-item-head"><h4>Margherita</h4><span class="menu-price">15 €</span></div><p>Sauce tomate, mozzarella fior di latte, basilic frais.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Regina</h4><span class="menu-price">18 €</span></div><p>Sauce tomate, jambon, champignons, fior di latte.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Tartufo</h4><span class="menu-price">22 €</span></div><p>Crème ricotta-truffe, fior di latte, truffe noire, roquette, copeaux de parmesan.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Tonnata</h4><span class="menu-price">19 €</span></div><p>Sauce tomate, fior di latte, thon, olives, oignons rouges, tomates cerises.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Formagissima</h4><span class="menu-price">18 €</span></div><p>Crème de ricotta, fior di latte, gorgonzola, taleggio.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Légumivore</h4><span class="menu-price">17 €</span></div><p>Sauce tomate, fior di latte, aubergines, poivrons, champignons, basilic.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Diavola</h4><span class="menu-price">18 €</span></div><p>Sauce tomate, nduja, fior di latte, saucisse piquante, oignons rouges confits.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Italianissima</h4><span class="menu-price">19 €</span></div><p>Sauce tomate, mozzarella di bufala, tomates cerises, roquette, jambon de Parme.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Fratelli</h4><span class="menu-price">19,50 €</span></div><p>Crème de ricotta, pesto de pistache, fior di latte, mortadelle, stracciatella, éclats de pistache.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Conrado</h4><span class="menu-price">20 €</span></div><p>Sauce tomate, fior di latte, bresaola, artichaut, roquette, parmesan.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Pollo</h4><span class="menu-price">18 €</span></div><p>Crème fraîche, fior di latte, poulet, parmesan.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Calzone</h4><span class="menu-price">18 €</span></div><p>Sauce tomate, fior di latte, jambon, œuf.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECONDI & RISOTTI -->
+        <div class="menu-panel" id="panel-secondi" role="tabpanel" aria-labelledby="tab-secondi" hidden>
+          <div class="menu-group">
+            <h3 class="menu-subhead">Secondi Piatti</h3>
+            <div class="menu-group-items">
+              <div class="menu-item"><div class="menu-item-head"><h4>Scaloppa alla Milanese</h4><span class="menu-price">25 €</span></div><p>Escalope de veau panée, servie avec des pâtes à la sauce tomate maison.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Scaloppa Fratelli</h4><span class="menu-price">24 €</span></div><p>Escalope de veau, crème, champignons, oignons, moutarde, servie avec des pâtes.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Saltimbocca alla Romana</h4><span class="menu-price">25 €</span></div><p>Escalope de veau, jambon de Parme, sauce à la sauge, mozzarella, servie avec des pâtes.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Entrecôte Grillée</h4><span class="menu-price">26 €</span></div><p>Entrecôte grillée, servie avec des frites maison.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Pavé de Saumon</h4><span class="menu-price">24 €</span></div><p>Pavé de saumon, risotto, stracciatella, crème citron.</p></div>
+            </div>
+          </div>
+          <div class="menu-group">
+            <h3 class="menu-subhead">Risotti</h3>
+            <div class="menu-group-items">
+              <div class="menu-item"><div class="menu-item-head"><h4>Risotto Salmone</h4><span class="menu-price">24 €</span></div><p>Risotto au saumon, crème citron.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Risotto Parma</h4><span class="menu-price">26 €</span></div><p>Risotto, scamorza, jambon de Parme, roquette.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DOLCI -->
+        <div class="menu-panel" id="panel-dolci" role="tabpanel" aria-labelledby="tab-dolci" hidden>
+          <div class="menu-group">
+            <h3 class="menu-subhead">Dolci</h3>
+            <div class="menu-group-items">
+              <div class="menu-item"><div class="menu-item-head"><h4>Tiramisù Maison</h4><span class="menu-price">10 €</span></div><p>La recette signature de la maison.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Panna Cotta al Pistacchio</h4><span class="menu-price">10 €</span></div><p>Crème cuite vanille-café, coulis caramel, éclats de pistache.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Moelleux Chocolat Maison</h4><span class="menu-price">10,50 €</span></div><p>Servi avec sa glace vanille et sa crème anglaise.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Pain Perdu</h4><span class="menu-price">9 €</span></div><p>Brioche tressée, glace vanille, fruits rouges et Nutella.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Nougat Glacé</h4><span class="menu-price">11 €</span></div><p>Nougat glacé et son coulis de fruits rouges.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Affogato</h4><span class="menu-price">9 €</span></div><p>Glace vanille nappée d'espresso chaud.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Macédoine de Fruits Frais</h4><span class="menu-price">9,50 €</span></div><p>Fruits de saison.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Pizza Nutella</h4><span class="menu-price">10 €</span></div><p>Pâte à pizza et Nutella.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Café Gourmand</h4><span class="menu-price">9 €</span></div><p>Café et son assortiment de mignardises.</p></div>
+              <div class="menu-item"><div class="menu-item-head"><h4>Thé Gourmand</h4><span class="menu-price">11 €</span></div><p>Sélection de thés Mariages Frères et mignardises.</p></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="menu-note reveal">Cuisine entièrement faite maison · Produits frais sélectionnés chaque jour.</p>
+    </div>
+  </section>
+
+  <!-- ===== GALERIE ===== -->
+  <section class="galerie" id="galerie">
+    <div class="container">
+      <div class="section-heading reveal">
+        <p class="eyebrow">L'ambiance</p>
+        <h2>Une table pensée pour les beaux moments</h2>
+      </div>
+      <div class="gallery-grid">
+        <figure class="gallery-item gallery-item--wide reveal"><div class="photo-placeholder photo-placeholder--gallery-1"><img src="assets/img/g-pizze.jpg" alt="Pizze au feu de bois portées en salle" loading="lazy"></div><figcaption>Nos pizze</figcaption></figure>
+        <figure class="gallery-item reveal"><div class="photo-placeholder photo-placeholder--gallery-2"><img src="assets/img/g-pasta.jpg" alt="Pâtes fraîches au pesto, stracciatella et pignons" loading="lazy"></div><figcaption>Pâtes fraîches maison</figcaption></figure>
+        <figure class="gallery-item reveal"><div class="photo-placeholder photo-placeholder--gallery-3"><img src="assets/img/g-antipasti.jpg" alt="Mozzarella in carrozza, antipasto maison" loading="lazy"></div><figcaption>Nos antipasti</figcaption></figure>
+        <figure class="gallery-item reveal"><div class="photo-placeholder photo-placeholder--gallery-4"><img src="assets/img/g-tiramisu.jpg" alt="Tiramisù maison" loading="lazy"></div><figcaption>Tiramisù maison</figcaption></figure>
+        <figure class="gallery-item gallery-item--wide reveal"><div class="photo-placeholder photo-placeholder--gallery-5"><img src="assets/img/g-table.jpg" alt="Planche de charcuterie italienne et verres de vin" loading="lazy"></div><figcaption>À table chez Fratelli</figcaption></figure>
+      </div>
+      <p class="menu-note reveal"><a href="https://www.fratelli-ristorante.fr/galerie" target="_blank" rel="noopener" class="link-arrow">Voir toute la galerie
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a></p>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT / RÉSERVATION ===== -->
+  <section class="contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info reveal">
+        <p class="eyebrow">Réservation &amp; contact</p>
+        <h2>Venir chez Fratelli</h2>
+        <p class="section-lead">Réservez votre table en ligne ou par téléphone. Vous pouvez aussi commander en Click &amp; Collect pour emporter.</p>
+
+        <ul class="info-list">
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 1 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div><strong>23 rue Pasquier, 75008 Paris</strong><span>À deux pas de la Madeleine · Métro Madeleine (8, 12, 14) &amp; Saint-Augustin (9)</span></div>
+          </li>
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <div><strong><a href="tel:+33142949781">01 42 94 97 81</a></strong><span>Réservation et renseignements</span></div>
+          </li>
+        </ul>
+
+        <table class="hours-table">
+          <caption>Horaires d'ouverture</caption>
+          <tbody>
+            <tr><th>Lundi – Samedi</th><td>12h00 – 15h00 · 18h00 – 23h00</td></tr>
+            <tr><th>Dimanche</th><td>18h00 – 23h00</td></tr>
+          </tbody>
+        </table>
+
+        <div class="contact-actions">
+          <a href="https://www.fratelli-ristorante.fr/reservations" target="_blank" rel="noopener" class="btn btn-primary">Réserver une table</a>
+          <a href="https://www.fratelli-ristorante.fr/online-ordering" target="_blank" rel="noopener" class="btn btn-outline">Commander en Click &amp; Collect</a>
+        </div>
+      </div>
+
+      <div class="contact-map reveal">
+        <iframe
+          title="Plan d'accès — Fratelli, 23 rue Pasquier, 75008 Paris"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=2.3199%2C48.8709%2C2.3269%2C48.8745&layer=mapnik&marker=48.8727342%2C2.3234044"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=23+rue+Pasquier+75008+Paris" target="_blank" rel="noopener">Voir l'itinéraire sur Google Maps
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <a href="#top" class="logo logo--footer">
+      <span class="logo-mark">F</span>
+      <span class="logo-stripe" aria-hidden="true"></span>
+      <span class="logo-text">Fratelli<span class="logo-sub">Ristorante Italiano</span></span>
+    </a>
+    <nav class="footer-nav" aria-label="Pied de page">
+      <a href="#histoire">La maison</a>
+      <a href="#menu">La carte</a>
+      <a href="#galerie">Galerie</a>
+      <a href="https://www.fratelli-ristorante.fr/online-ordering" target="_blank" rel="noopener">Click &amp; Collect</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="footer-social">
+      <a href="https://www.fratelli-ristorante.fr/reservations" target="_blank" rel="noopener" class="btn btn-primary btn-small">Réserver</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© 2026 Fratelli — Ristorante Italiano · 23 rue Pasquier, 75008 Paris · 01 42 94 97 81</p>
+    <p>Lundi – Samedi 12h–15h &amp; 18h–23h · Dimanche 18h–23h</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
